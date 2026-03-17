@@ -25,7 +25,7 @@ if uploaded_file is not None:
     if question:
         results = retrieve_chunks(chunks, question, top_k=3)
         context = build_context(results)
-        answer = answer_question(question, contex, api_key)
+        answer = answer_question(question, context, api_key)
 
         st.subheader("Answer")
         st.write(answer)
