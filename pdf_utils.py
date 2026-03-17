@@ -1,7 +1,10 @@
 from pypdf import PdfReader
+import streamlit as st
 
-def extract_text_by_page(file_obj):
-    reader = PdfReader(file_obj)
+@st.cache_data
+def extract_text_by_page(file_bytes):
+    from io import BytesIO
+    reader = PdfReader(BytesIO(file_bytes))
     pages = []
 
     for i, page in enumerate(reader.pages):

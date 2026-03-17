@@ -1,3 +1,6 @@
+import streamlit as st
+
+@st.cache_data
 def chunk_pages(pages, chunk_size=500, overlap=100):
     chunks = []
 
