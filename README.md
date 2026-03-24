@@ -1,4 +1,4 @@
-# NotebookLM Mini
+# NotebookLM
 
 A lightweight PDF-based question answering web app inspired by NotebookLM.
 
