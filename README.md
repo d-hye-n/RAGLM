@@ -1,4 +1,4 @@
-# NotebookLM
+# RAGLM
 
 A lightweight PDF-based question answering web app inspired by NotebookLM.
 
